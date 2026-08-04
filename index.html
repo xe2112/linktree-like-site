@@ -1,10 +1,130 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <title>Hello World</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moje Linki</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Inter, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b, #312e81);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 24px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: rgba(255,255,255,.08);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 24px;
+      padding: 32px;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(0,0,0,.35);
+    }
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+      margin: auto;
+      border-radius: 50%;
+      background: linear-gradient(45deg,#6366f1,#8b5cf6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 42px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: #d1d5db;
+      margin-bottom: 28px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .link {
+      display: block;
+      padding: 16px;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      border-radius: 14px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.12);
+      transition: .25s;
+    }
+
+    .link:hover {
+      transform: translateY(-3px);
+      background: rgba(99,102,241,.4);
+    }
+
+    footer {
+      margin-top: 30px;
+      color: #94a3b8;
+      font-size: .85rem;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>Hello, World!</h1>
+
+<div class="card">
+
+  <div class="avatar">M</div>
+
+  <h1>Mateusz</h1>
+
+  <p>Programista • AI • Projekty</p>
+
+  <div class="links">
+
+    <a class="link" href="https://www.vinted.pl/member/3167350207-mjdrop" target="_blank">
+      Mój sklep z ciuchami
+    </a>
+
+    <a class="link" href="https://m.twitch.tv/goddes_nadia/home" target="_blank">
+      Oglądaj mnie na żywo
+    </a>
+
+    <a class="link" href="https://www.instagram.com/goddes_nadia?igsh=MTJ6dWk4MmRwZnRneg==" target="_blank">
+      Instagram
+    </a>
+
+  </div>
+
+  <footer>
+    © 2026 • Moja strona
+  </footer>
+
+</div>
+
 </body>
 </html>
